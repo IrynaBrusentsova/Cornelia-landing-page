@@ -428,7 +428,7 @@ body {
   gap: 20px;
   padding: 20px;
 }
-.talk_about .grid .grid_item1 {
+.talk_about .grid .grid_item1, .talk_about .grid .grid_item2 {
   height: 100%;
   display: grid;
   grid-template-rows: repeat(4, auto);
@@ -453,24 +453,19 @@ body {
   padding: 20px 0 0 0;
 }
 .talk_about .grid .card .name p {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Roboto";
   font-weight: 400;
 }
 .talk_about .grid .card .name p span {
   font-weight: 700;
 }
-.talk_about .grid .grid_item2 {
-  height: 100%;
-  display: grid;
-  grid-template-rows: repeat(4, auto);
-  gap: 20px;
-}
 .talk_about .grid .grid_item3 {
-  height: 100%;
   display: grid;
   grid-template-rows: repeat(2, auto);
   gap: 20px;
+  text-align: left;
+  align-self: start;
 }
 
 @media (max-width: 900px) {
