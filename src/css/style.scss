@@ -57,7 +57,7 @@ body{
     justify-content: space-between;
     min-height: 100px;
 
-    background-color: #FFCCBC;
+    background-color: $colorSecond;
     padding: 0 40px 0 0;
   
     position: fixed;
@@ -91,20 +91,25 @@ body{
 
         a {
             text-decoration: none;
-            color: #0B4141;
+            color:$colorFirst;
             font-size: 16px;
         }
 
         li:last-child {
             a {
                 text-decoration: none;
-                color: #FFCCBC;
+                color:$colorSecond;              
             }
 
-            background-color: #0B4141;
+            background-color: $colorFirst;
             padding: 12px 18px;
             border-radius: 124px;
             margin-right: 10px;
+            transition: 0.8s;
+            &:hover{
+                transition: 0.8s;
+                transform: scale(1.1);
+             }
         }
     }
 
@@ -326,8 +331,7 @@ body{
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         height:100%;
-        
-
+       
         .grid_item1{
            align-self:center;
            color: $colorSecond;
@@ -336,8 +340,7 @@ body{
             h3{
                 font-size: 68px;
                 line-height: 72px;
-                font-weight: 900;
-               
+                font-weight: 900;   
             }
             p{
                 font-size: 24px;
@@ -352,11 +355,14 @@ body{
                 border: 1px solid $colorSecond;
                 border-radius: 100px;
                 text-align: center;
+                font-size: 18px;
+                font-weight: 700;
             }
            
         }
         .grid_item2{
           align-self:end;
+         
         }
 
     }
@@ -365,6 +371,7 @@ body{
 
 .always{
     min-height: 1288px;
+    background-color: rgba(245, 245, 245, 0.6);
     .grid{
      display: grid;
      grid-template-columns: repeat(2, 1fr);
@@ -436,8 +443,8 @@ body{
     position: relative;
     margin-bottom: 32px; 
     text-align: center;
+    background-color: rgba(245, 245, 245, 0.6);
  
-
     .description{
         position: absolute;
         left: 0;
@@ -569,8 +576,9 @@ body{
 
 .each_detail{
     min-height: 700px;
-    // background-color: rgb(217, 83, 217);
+    background-color: rgba(245, 245, 245, 0.6);
     display: grid;
+    margin-bottom: 96px;
 
     .grid{
         display: grid;
@@ -578,8 +586,7 @@ body{
         gap: 40px;
         height:100%;
 
-        .grid_item1{
-          
+        .grid_item1{ 
             position: relative;
             img{
                 object-fit: contain;
@@ -621,10 +628,60 @@ body{
                 border: 1px solid $colorFirst;
                 border-radius: 100px;
                 color: $colorFirst;
+                font-size: 18px;
+                font-weight: 700;
             }
         }
     }
     
+}
+
+.unicorn_exist{
+    min-height: 728px;
+    background-color: rgba(245, 245, 245, 0.6);
+    display: grid;
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        height:100%;
+    }
+    .grid_item1{
+        align-self: center;
+        align-items: center;
+        padding-left:11%;
+        color: $colorFirst;
+        img{
+            margin: 0 auto;
+        }
+        h3{
+            font-size: 68px;
+            line-height: 72px;
+            font-weight: 900; 
+            margin-top: 32px;    
+        }
+        p{
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 400;
+            margin-top: 32px;
+            margin-bottom: 48px;
+        }
+        a{
+            text-decoration: none;
+            padding: 12px 34px;
+            border: 1px solid $colorFirst;
+            border-radius: 100px;
+            color: $colorFirst;
+            font-size: 18px;
+            font-weight: 700;   
+        }
+    }
+
+    .grid_item2{
+        align-self: end;                 
+    }
 }
 
 @media (max-width: 900px) {
