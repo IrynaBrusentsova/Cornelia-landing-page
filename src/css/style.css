@@ -569,12 +569,14 @@ body {
 }
 .unicorn_exist .grid_item1 a {
   text-decoration: none;
-  padding: 12px 34px;
-  border: 1px solid #0B4141;
-  border-radius: 100px;
   color: #0B4141;
   font-size: 18px;
   font-weight: 700;
+}
+.unicorn_exist .grid_item1 button {
+  padding: 12px 34px;
+  border: 1px solid #0B4141;
+  border-radius: 100px;
 }
 .unicorn_exist .grid_item2 {
   align-self: end;

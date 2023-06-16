@@ -668,14 +668,26 @@ body{
             margin-top: 32px;
             margin-bottom: 48px;
         }
+        // a{
+        //     text-decoration: none;
+        //     padding: 12px 34px;
+        //     border: 1px solid $colorFirst;
+        //     border-radius: 100px;
+        //     color: $colorFirst;
+        //     font-size: 18px;
+        //     font-weight: 700;   
+        // }
         a{
             text-decoration: none;
-            padding: 12px 34px;
-            border: 1px solid $colorFirst;
-            border-radius: 100px;
             color: $colorFirst;
             font-size: 18px;
-            font-weight: 700;   
+            font-weight: 700; 
+        }
+
+        button{
+            padding: 12px 34px;
+            border: 1px solid $colorFirst;
+            border-radius: 100px;   
         }
     }
 
@@ -683,6 +695,7 @@ body{
         align-self: end;                 
     }
 }
+
 
 @media (max-width: 900px) {
     .menu {
