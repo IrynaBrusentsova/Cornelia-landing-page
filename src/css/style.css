@@ -41,7 +41,7 @@ img {
 }
 
 body {
-  font-family: "Nunito Sans";
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .menu {
@@ -152,7 +152,8 @@ body {
   text-align: center;
   z-index: 1;
 }
-.banner .description h1, .banner .description p:first-of-type {
+.banner .description h1,
+.banner .description p:first-of-type {
   color: #FFCCBC;
   font-size: 120px;
   left: 128px;
@@ -197,7 +198,8 @@ body {
   font-weight: 400;
   font-family: "Alfa Slab One";
 }
-.toward .description p:nth-child(3), .toward .description p:nth-child(4) {
+.toward .description p:nth-child(3),
+.toward .description p:nth-child(4) {
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
@@ -287,13 +289,15 @@ body {
 }
 .choose .grid .grid_item1 a {
   text-decoration: none;
-  padding: 12px 34px;
   color: #FFCCBC;
-  border: 1px solid #FFCCBC;
-  border-radius: 100px;
-  text-align: center;
   font-size: 18px;
   font-weight: 700;
+}
+.choose .grid .grid_item1 button {
+  padding: 12px 34px;
+  border: 1px solid #FFCCBC;
+  border-radius: 100px;
+  background-color: #0B4141;
 }
 .choose .grid .grid_item2 {
   align-self: end;
@@ -437,7 +441,8 @@ body {
   gap: 20px;
   padding: 20px;
 }
-.talk_about .grid .grid_item1, .talk_about .grid .grid_item2 {
+.talk_about .grid .grid_item1,
+.talk_about .grid .grid_item2 {
   height: 100%;
   display: grid;
   grid-template-rows: repeat(4, auto);
@@ -526,12 +531,14 @@ body {
 }
 .each_detail .grid .grid_item2 a {
   text-decoration: none;
-  padding: 12px 34px;
-  border: 1px solid #0B4141;
-  border-radius: 100px;
   color: #0B4141;
   font-size: 18px;
   font-weight: 700;
+}
+.each_detail .grid .grid_item2 button {
+  padding: 12px 34px;
+  border: 1px solid #0B4141;
+  border-radius: 100px;
 }
 
 .unicorn_exist {
@@ -580,6 +587,70 @@ body {
 }
 .unicorn_exist .grid_item2 {
   align-self: end;
+}
+
+.footer {
+  min-height: 800px;
+  background-color: #0B4141;
+  position: relative;
+}
+.footer h2 {
+  font-size: 80px;
+  line-height: 96px;
+  font-weight: 400;
+  font-family: "Alfa Slab One";
+  color: #FFCCBC;
+}
+.footer .description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translate(0, -50%);
+  top: 50%;
+  text-align: center;
+  z-index: 1;
+}
+.footer .description .btn_group {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+.footer .description .button {
+  display: flex;
+  align-items: center;
+  width: 264px;
+  height: 82px;
+  margin: 0 20px;
+  padding: 21px 40px;
+  border-top: 1px solid #FFCCBC;
+  border-left: 1px solid #FFCCBC;
+  border-right: 1px solid #FFCCBC;
+  border-radius: 300px;
+}
+.footer .description .button img {
+  margin-right: 12px;
+}
+.footer .description a {
+  text-decoration: none;
+  color: #FFCCBC;
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer .cornelia {
+  position: absolute;
+  bottom: 100px;
+  left: 3%;
+  color: #FFCCBC;
+}
+.footer .cornelia p:first-child {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Alfa Slab One";
+}
+.footer .cornelia p:last-child {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 @media (max-width: 900px) {
