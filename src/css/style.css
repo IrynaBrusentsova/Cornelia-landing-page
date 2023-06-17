@@ -141,6 +141,7 @@ body {
 .banner {
   min-height: 900px;
   position: relative;
+  background-color: rgba(245, 245, 245, 0.6);
 }
 .banner .description {
   position: absolute;
@@ -154,18 +155,18 @@ body {
 }
 .banner .description h1,
 .banner .description p:first-of-type {
-  color: #FFCCBC;
   font-size: 120px;
-  left: 128px;
+  line-height: 128px;
   font-weight: 400;
-  font-family: "Alfa Slab One";
+  color: #FFCCBC;
+  font-family: "Alfa Slab One", sans-serif;
 }
 .banner .description p:last-of-type {
-  color: #0B4141;
   font-size: 120px;
-  left: 128px;
+  line-height: 128px;
   font-weight: 400;
-  font-family: "Alfa Slab One";
+  color: #0B4141;
+  font-family: "Alfa Slab One", sans-serif;
 }
 .banner .hero {
   position: absolute;
@@ -188,7 +189,6 @@ body {
   margin: 0 auto;
   transform: translate(0, -50%);
   z-index: 1;
-  max-width: 747px;
   color: #FFFFFF;
   text-align: center;
 }
@@ -196,7 +196,7 @@ body {
   font-size: 80px;
   line-height: 96px;
   font-weight: 400;
-  font-family: "Alfa Slab One";
+  font-family: "Alfa Slab One", sans-serif;
 }
 .toward .description p:nth-child(3),
 .toward .description p:nth-child(4) {
@@ -264,6 +264,7 @@ body {
   min-height: 800px;
   background-color: #0B4141;
   display: grid;
+  padding: 40px;
 }
 .choose .grid {
   display: grid;
@@ -274,7 +275,7 @@ body {
 .choose .grid .grid_item1 {
   align-self: center;
   color: #FFCCBC;
-  padding-right: 8.6%;
+  padding-right: 6.6666666667%;
 }
 .choose .grid .grid_item1 h3 {
   font-size: 68px;
@@ -284,20 +285,26 @@ body {
 .choose .grid .grid_item1 p {
   font-size: 24px;
   line-height: 32px;
+  font-weight: 400;
   margin-top: 32px;
   margin-bottom: 48px;
 }
 .choose .grid .grid_item1 a {
   text-decoration: none;
-  color: #FFCCBC;
   font-size: 18px;
   font-weight: 700;
+  color: #FFCCBC;
 }
 .choose .grid .grid_item1 button {
   padding: 12px 34px;
   border: 1px solid #FFCCBC;
   border-radius: 100px;
   background-color: #0B4141;
+  transition: 0.8s;
+}
+.choose .grid .grid_item1 button:hover {
+  transition: 0.8s;
+  transform: scale(1.1);
 }
 .choose .grid .grid_item2 {
   align-self: end;
@@ -369,10 +376,10 @@ body {
 
 .magic {
   min-height: 832px;
-  position: relative;
   margin-bottom: 32px;
   text-align: center;
   background-color: rgba(245, 245, 245, 0.6);
+  position: relative;
 }
 .magic .description {
   position: absolute;
@@ -392,7 +399,7 @@ body {
   font-size: 80px;
   line-height: 96px;
   font-weight: 400;
-  font-family: "Alfa Slab One";
+  font-family: "Alfa Slab One", sans-serif;
   color: #FFCCBC;
 }
 .magic .description p {
@@ -404,7 +411,6 @@ body {
 .magic .grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  justify-content: space-between;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -412,7 +418,6 @@ body {
   margin: 0 auto;
 }
 .magic .grid img {
-  width: 100%;
   height: 332px;
 }
 
@@ -423,7 +428,7 @@ body {
   display: grid;
   justify-content: center;
 }
-.talk_about h2 {
+.talk_about h3 {
   font-size: 68px;
   line-height: 72px;
   font-weight: 900;
@@ -468,8 +473,9 @@ body {
 }
 .talk_about .grid .card .name p {
   font-size: 14px;
-  font-family: "Roboto";
+  line-height: 16.41px;
   font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
 .talk_about .grid .card .name p span {
   font-weight: 700;
@@ -486,6 +492,7 @@ body {
   min-height: 700px;
   background-color: rgba(245, 245, 245, 0.6);
   display: grid;
+  padding: 40px;
   margin-bottom: 96px;
 }
 .each_detail .grid {
@@ -539,6 +546,11 @@ body {
   padding: 12px 34px;
   border: 1px solid #0B4141;
   border-radius: 100px;
+  transition: 0.8s;
+}
+.each_detail .grid .grid_item2 button:hover {
+  transition: 0.8s;
+  transform: scale(1.1);
 }
 
 .unicorn_exist {
@@ -584,6 +596,11 @@ body {
   padding: 12px 34px;
   border: 1px solid #0B4141;
   border-radius: 100px;
+  transition: 0.8s;
+}
+.unicorn_exist .grid_item1 button:hover {
+  transition: 0.8s;
+  transform: scale(1.1);
 }
 .unicorn_exist .grid_item2 {
   align-self: end;
@@ -598,7 +615,7 @@ body {
   font-size: 80px;
   line-height: 96px;
   font-weight: 400;
-  font-family: "Alfa Slab One";
+  font-family: "Alfa Slab One", sans-serif;
   color: #FFCCBC;
 }
 .footer .description {
@@ -619,6 +636,7 @@ body {
 .footer .description .button {
   display: flex;
   align-items: center;
+  transition: 0.8s;
   width: 264px;
   height: 82px;
   margin: 0 20px;
@@ -627,6 +645,10 @@ body {
   border-left: 1px solid #FFCCBC;
   border-right: 1px solid #FFCCBC;
   border-radius: 300px;
+}
+.footer .description .button:hover {
+  transition: 0.8s;
+  transform: scale(1.1);
 }
 .footer .description .button img {
   margin-right: 12px;
@@ -645,11 +667,13 @@ body {
 }
 .footer .cornelia p:first-child {
   font-size: 20px;
+  line-height: 24px;
   font-weight: 400;
-  font-family: "Alfa Slab One";
+  font-family: "Alfa Slab One", sans-serif;
 }
 .footer .cornelia p:last-child {
   font-size: 16px;
+  line-height: 21.82px;
   font-weight: 600;
 }
 
