@@ -172,14 +172,15 @@ body {
         & h1,
         p:first-of-type {
             @include textsize(120px,128px,400 );
-            color: #FFCCBC;  
-            // font-family: 'Motter Corpus Std';
             font-family: 'Alfa Slab One',sans-serif;
+            color: #FFCCBC;  
+            
         }
         & p:last-of-type {
             @include textsize(120px,128px,400 );
-            color: #0B4141;
             font-family: 'Alfa Slab One',sans-serif;
+            color: #0B4141;
+           
         }
         position: absolute;
         left: 0;
@@ -446,7 +447,6 @@ body {
         // max-width: 890px/1440px * 100%;
         h2 {
             @include textsize(80px,96px,400);
-            // font-family: 'Motter Corpus Std';
             font-family: 'Alfa Slab One', sans-serif;
             color: $colorSecond;
         }
@@ -506,7 +506,6 @@ body {
             padding: 20px;
             p {
                 @include textsize(13px,17.7px,400);
-
                 color: $colorFirst;
             }
             .name {
@@ -517,7 +516,6 @@ body {
                 p {
                     @include textsize(14px,16.41px,400);
                     font-family: 'Roboto', sans-serif;
-
                     span {
                         font-weight: 700;
                     }
@@ -560,7 +558,7 @@ body {
                 // top:280px;
                 // left: 330px;
                 top: 40%;
-                left: 48%;
+                left: 58%;
                 z-index: 1;
             }
         }
@@ -709,10 +707,8 @@ body {
         bottom:100px;
         left: 3%;
         color: $colorSecond;
-
         p:first-child{
             @include textsize(20px,24px,400);
-            // font-family: 'Motter Corpus Std';
             font-family: 'Alfa Slab One',sans-serif;     
         }
         p:last-child{
@@ -752,5 +748,98 @@ body {
             grid-row-gap: 30px;
         }
     }
+    .banner{
+        .description {
+            & h1,
+            p:first-of-type,
+            p:last-of-type {
+                @include textsize(80px,96px,400);   
+            }   
+        }
+    }
+    .magic{
+    .description{
+            h2 {
+                @include textsize(68px,72px,400);
+            }
+        }
+        .description{
+            p {
+                padding: 24px 10%;
+            }
+        }
+    }
+   .each_detail {
+        .grid {
+            img:nth-child(3) {
+                display: none;  
+            }
+        }      
+   }
+
+}
+
+@media (max-width: 768px){
+    .choose{
+        .grid{
+            grid-template-columns: 1fr;
+        }
+    }
+    .always{
+        .grid{
+            grid-template-columns: 1fr;
+            .grid_item1 { 
+                padding-right: 0;
+                margin: 0 auto;
+            }
+             .grid_item2 {  
+                padding-left: 0;          
+            }
+            .grid_item4 {  
+                padding-left: 0px;
+                margin: 0 auto;
+            }
+        }   
+    }
+    .magic{
+         .grid {
+            img {
+                height: 232px;
+            }
+        }
+    }
+    // .talk_about{
+    //     .grid{
+    //         grid-template-columns: 1fr;
+    //     }
+    // }
+    .each_detail {
+        .grid{
+            grid-template-columns: 1fr;
+            .grid_item1{
+               margin: 0 auto;
+            }
+        }   
+    }
+    .unicorn_exist{
+        .grid{
+            grid-template-columns: 1fr;
+            .grid_item1 {
+                align-self: start; 
+                padding: 0 11%;    
+            }
+        }
+    }
+    .footer {
+        h2 {
+            @include textsize(68px,72px,400);
+        }
+        .btn_group {
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }   
+    }
+
 
 }
