@@ -335,7 +335,8 @@ body {
   padding-left: 50px;
 }
 .always .grid .grid_item2 img {
-  display: inline-block;
+  float: left;
+  margin-right: 10px;
 }
 .always .grid .grid_item2 h3 {
   font-size: 68px;

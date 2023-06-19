@@ -1,6 +1,13 @@
 $colorFirst: #0B4141;
 $colorSecond: #FFCCBC;
 
+// Mixins
+@mixin textsize ($f, $h, $w){
+    font-size: $f;
+    line-height: $h;
+    font-weight: $w;
+}
+// Mixins end
 
 body,
 h1,
@@ -29,16 +36,6 @@ img {
     max-width: 100%;
     display: block;
 }
-// Mixins
-@mixin textsize ($f, $h, $w){
-    font-size: $f;
-    line-height: $h;
-    font-weight: $w;
-}
-
-// Mixins end
-
-
 
 .container {
     max-width: 1440px;
@@ -67,60 +64,50 @@ body {
 
     background-color: $colorSecond;
     padding: 0 40px 0 0;
-
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 5;
-
     .logo {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .nav {
         display: flex;
         width: 700px;
         padding: 0 20px;
     }
-
     .nav ul {
         width: 100%;
         list-style: none;
         display: flex;
         justify-content: end;
         align-items: center;
-
         li {
             padding: 0 25px;
         }
-
         a {
             text-decoration: none;
             color: $colorFirst;
             font-size: 16px;
         }
-
         li:last-child {
             a {
                 text-decoration: none;
                 color: $colorSecond;
             }
-
             background-color: $colorFirst;
             padding: 12px 18px;
             border-radius: 124px;
             margin-right: 10px;
             transition: 0.8s;
-
             &:hover {
                 transition: 0.8s;
                 transform: scale(1.1);
             }
         }
-  
     }
 
     .burger {
@@ -181,7 +168,6 @@ body {
     min-height: 900px;
     position: relative;
     background-color: rgba(245, 245, 245, 0.6);
-
     .description {
         & h1,
         p:first-of-type {
@@ -190,13 +176,11 @@ body {
             // font-family: 'Motter Corpus Std';
             font-family: 'Alfa Slab One',sans-serif;
         }
-
         & p:last-of-type {
             @include textsize(120px,128px,400 );
             color: #0B4141;
             font-family: 'Alfa Slab One',sans-serif;
         }
-
         position: absolute;
         left: 0;
         right: 0;
@@ -206,14 +190,12 @@ body {
         text-align: center;
         z-index: 1;
     }
-
     .hero {
         position: absolute;
         left: 0;
         right: 0;
         margin: 0 auto;
         bottom: -50px;
-
     }
 
     // .confetti{
@@ -221,19 +203,21 @@ body {
     //         position: absolute;
     //         top: 200px;
     //         left: 25px;
+            
+    
     //     }
     //     & img:nth-child(2){
     //         position: absolute;
     //         top:  478px;
     //         left: 147px;
+           
     //     }
     //     & img:nth-child(3){
     //         position: absolute;
     //         top:  529px;
     //         left: 1334px;
+           
     //     }
-
-
 
     // }
 }
@@ -251,31 +235,25 @@ body {
         margin: 0 auto;
         transform: translate(0, -50%);
         z-index: 1;
-        // width: 747px/1440px *100%;
         color: #FFFFFF;
         text-align: center;
-
         h2 {
             @include textsize(80px,96px,400);
             // font-family: 'Motter Corpus Std';
             font-family: 'Alfa Slab One', sans-serif;
         }
-
         p:nth-child(3),
         p:nth-child(4) {
              @include textsize(24px,32px,400);
         }
-
         p:nth-child(3) {
             margin-top: 40px;
             margin-bottom: 40px;
         }
-
         p:nth-child(4) span {
             font-weight: 800;
         }
     }
-
     .pictures {
         filter: blur(4px);
 
@@ -347,30 +325,24 @@ body {
     background-color: $colorFirst;
     display: grid;
     padding: 40px;
-
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         height: 100%;
-
         .grid_item1 {
             align-self: center;
             color: $colorSecond;
             padding-right: 96px/1440px *100%;
             // padding-right: 8.6%;
-
             h3 {
-                @include textsize(68px,72px,900);
-               
+                @include textsize(68px,72px,900);   
             }
-
             p {
                 @include textsize(24px,32px, 400);
                 margin-top: 32px;
                 margin-bottom: 48px;
             }
-
             a {
                 text-decoration: none;
                 font-size: 18px;
@@ -383,18 +355,14 @@ body {
                 border-radius: 100px;
                 background-color: $colorFirst;
                 transition: 0.8s;
-
                 &:hover {
                     transition: 0.8s;
                     transform: scale(1.1);
                 }
             }
-
         }
-
         .grid_item2 {
             align-self: end;
-
         }
     }
 
@@ -403,7 +371,6 @@ body {
 .always {
     min-height: 1288px;
     background-color: rgba(245, 245, 245, 0.6);
-
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -411,34 +378,27 @@ body {
         gap: 40px;
         align-items: center;
         padding: 40px;
-
         .grid_item1 {
             justify-content: center;
             text-align: center;
             padding-right: 50px;
         }
-
         .grid_item2 {
             @include textsize(24px,32px, 400);
-
             color: $colorFirst;
             padding-left: 50px;
-
             img {
-                display: inline-block;
+               float: left;
+               margin-right: 10px;
             }
-
             h3 {
                 @include textsize(68px,72px,900);
-
                 color: $colorSecond;
                 margin-bottom: 32px;
             }
-
             p {
                 margin-bottom: 32px;
             }
-
             a {
                 text-decoration: none;
                 font-size: 16px;
@@ -447,28 +407,22 @@ body {
                 color: $colorFirst;
             }
         }
-
         .grid_item3 {
             @include textsize(24px,32px, 400);
-
             color: $colorFirst;
             padding-right: 50px;
-
             h3 {
                 @include textsize(68px,72px,900);
-
                 color: $colorFirst;
                 margin-bottom: 32px;
             }
         }
-
         .grid_item4 {
             justify-content: center;
             text-align: center;
             padding-left: 50px;
 
         }
-
     }
 }
 
@@ -487,27 +441,22 @@ body {
         transform: translate(0, -50%);
         z-index: 1;
         text-align: center;
-
         @include textsize(24px,32px, 400);
         color: $colorFirst;
         // max-width: 890px/1440px * 100%;
-
         h2 {
             @include textsize(80px,96px,400);
             // font-family: 'Motter Corpus Std';
             font-family: 'Alfa Slab One', sans-serif;
             color: $colorSecond;
         }
-
         p {
             padding: 24px 19%;
             span {
                 font-weight: 800;
             }
         }
-
     }
-
     .grid {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
@@ -528,17 +477,14 @@ body {
     text-align: center;
     display: grid;
     justify-content: center;
-
     h3 {
         @include textsize(68px,72px,900);
         color: #FFFFFF;
         padding: 64px 0;
     }
-
     .grid_wrapper {
         max-width: 960px;
     }
-
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -546,7 +492,6 @@ body {
         justify-content: center;
         gap: 20px;
         padding: 20px;
-
         .grid_item1,
         .grid_item2 {
             height: 100%;
@@ -555,24 +500,20 @@ body {
             gap: 16px;
             text-align: left;
         }
-
         .card {
             border-radius: 8px;
             background-color: #FFFFFF;
             padding: 20px;
-
             p {
                 @include textsize(13px,17.7px,400);
 
                 color: $colorFirst;
             }
-
             .name {
                 display: grid;
                 grid-template-columns: 30% 70%;
                 align-items: center;
                 padding: 20px 0 0 0;
-
                 p {
                     @include textsize(14px,16.41px,400);
                     font-family: 'Roboto', sans-serif;
@@ -581,11 +522,9 @@ body {
                         font-weight: 700;
                     }
                 }
-
             }
 
         }
-
         .grid_item3 {
             display: grid;
             grid-template-rows: repeat(2, auto);
@@ -593,9 +532,7 @@ body {
             text-align: left;
             align-self: start;
         }
-
     }
-
 }
 
 .each_detail {
@@ -609,19 +546,15 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         height: 100%;
-
         .grid_item1 {
             position: relative;
-
             img {
                 object-fit: contain;
             }
-
             img:nth-child(1) {
                 margin-top: 16px;
                 margin-bottom: 88px;
             }
-
             img:nth-child(3) {
                 position: absolute;
                 // top:280px;
@@ -631,30 +564,25 @@ body {
                 z-index: 1;
             }
         }
-
         .grid_item2 {
             align-self: center;
             padding-left: 11%;
             padding-right: 11%;
             color: $colorFirst;
-
             h3 {
                 @include textsize(68px,72px,900);
             }
-
             p {
                 @include textsize(24px,32px,400);
                 margin-top: 32px;
                 margin-bottom: 48px;
             }
-
             a {
                 text-decoration: none;
                 color: $colorFirst;
                 font-size: 18px;
                 font-weight: 700;
             }
-    
             button {
                 padding: 12px 34px;
                 border: 1px solid $colorFirst;
@@ -674,14 +602,12 @@ body {
     min-height: 728px;
     background-color: rgba(245, 245, 245, 0.6);
     display: grid;
-
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         height: 100%;
     }
-
     .grid_item1 {
         align-self: center;
         align-items: center;
@@ -692,12 +618,10 @@ body {
         }
         h3 {
             @include textsize(68px,72px,900);
-
             margin-top: 32px;
         }
         p {
             @include textsize(24px,32px,400);
-
             margin-top: 32px;
             margin-bottom: 48px;
         }
