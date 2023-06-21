@@ -776,7 +776,6 @@ body {
             }
         }      
    }
-
 }
 
 @media (max-width: 768px){
@@ -839,8 +838,6 @@ body {
             align-items: center;
         }   
     }
-
-
 }
 @media (max-width: 576px){
     .banner{
@@ -944,6 +941,7 @@ body {
     .each_detail{
         padding: 15px;
         .grid{
+            
             .grid_item2{
                 padding: 0;
                 h3 {
@@ -952,8 +950,18 @@ body {
             }
         }
     }
+    .unicorn_exist{
+        padding: 15px;
+        .grid{
+            .grid_item1{
+                padding: 0;
+                h3{
+                    @include textsize(48px,72px,400);
+                }
+            }
+        }
+    }
 
-   
     .footer{
         h2 {
             @include textsize(48px,72px,400);

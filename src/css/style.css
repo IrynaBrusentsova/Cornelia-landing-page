@@ -875,6 +875,17 @@ body {
     line-height: 72px;
     font-weight: 400;
   }
+  .unicorn_exist {
+    padding: 15px;
+  }
+  .unicorn_exist .grid .grid_item1 {
+    padding: 0;
+  }
+  .unicorn_exist .grid .grid_item1 h3 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+  }
   .footer h2 {
     font-size: 48px;
     line-height: 72px;
