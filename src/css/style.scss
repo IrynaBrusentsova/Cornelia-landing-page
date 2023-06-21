@@ -808,11 +808,7 @@ body {
             }
         }
     }
-    // .talk_about{
-    //     .grid{
-    //         grid-template-columns: 1fr;
-    //     }
-    // }
+    
     .each_detail {
         .grid{
             grid-template-columns: 1fr;
@@ -841,5 +837,21 @@ body {
         }   
     }
 
+
+}
+@media (max-width: 576px){
+    .talk_about{
+        .grid{
+            grid-template-columns: 1fr;
+        }
+    }
+    .footer{
+        h2 {
+            @include textsize(48px,72px,400);
+        }
+        .cornelia{
+            bottom: 50px;
+        }
+    }
 
 }

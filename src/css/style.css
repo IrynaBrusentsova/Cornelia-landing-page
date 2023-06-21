@@ -766,4 +766,17 @@ body {
     gap: 40px;
     align-items: center;
   }
+}
+@media (max-width: 576px) {
+  .talk_about .grid {
+    grid-template-columns: 1fr;
+  }
+  .footer h2 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+  }
+  .footer .cornelia {
+    bottom: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
