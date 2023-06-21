@@ -795,6 +795,9 @@ body {
              .grid_item2 {  
                 padding-left: 0;          
             }
+            .grid_item3 {  
+                padding-right: 0;   
+            }
             .grid_item4 {  
                 padding-left: 0px;
                 margin: 0 auto;
@@ -808,7 +811,7 @@ body {
             }
         }
     }
-    
+  
     .each_detail {
         .grid{
             grid-template-columns: 1fr;
@@ -840,11 +843,117 @@ body {
 
 }
 @media (max-width: 576px){
+    .banner{
+        min-height: 600px;
+        .description {
+            & h1,
+            p:first-of-type {
+                @include textsize(48px,72px,400);  
+            }
+            & p:last-of-type {
+                @include textsize(48px,72px,400);   
+            }
+        }
+
+    }
+    .toward{
+        .description {
+            padding: 15px;
+            h2 {
+                @include textsize(48px,72px,400); 
+            }
+            p:nth-child(3),
+            p:nth-child(4) {
+                 @include textsize(24px,32px,400);
+            }
+            p:nth-child(3) {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .choose{
+        padding: 15px;
+        .grid {
+            .grid_item1 {
+                padding-right: 0;
+                h3 {
+                    @include textsize(48px,72px,400); 
+                }
+            }
+         
+        }
+    }
+    .always{
+        padding: 15px;
+        .grid {
+            padding: 0;
+            .grid_item1{
+                img{
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+            .grid_item2 {
+                h3 {
+                    @include textsize(48px,72px,400); 
+                } 
+            }
+            .grid_item3 {
+                               
+                h3 {
+                    @include textsize(48px,72px,400);   
+                }
+            }
+            .grid_item4 {
+                img{
+                    width: 80%;
+                    margin: 0 auto;
+                }
+    
+            }
+        }
+    }
+    .magic{
+        min-height: 632px;
+        padding: 15px;
+        .description {
+            top: 50%;
+            h2 {
+                @include textsize(48px,72px,400); 
+            }
+            p {
+                padding:0;
+            }
+        }
+        .grid {
+            display: none;
+        }
+
+    }
+
     .talk_about{
+        h3 {
+            @include textsize(48px,72px,400); 
+        }
         .grid{
             grid-template-columns: 1fr;
         }
     }
+
+    .each_detail{
+        padding: 15px;
+        .grid{
+            .grid_item2{
+                padding: 0;
+                h3 {
+                    @include textsize(48px,72px,400);
+                }
+            }
+        }
+    }
+
+   
     .footer{
         h2 {
             @include textsize(48px,72px,400);

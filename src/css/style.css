@@ -736,6 +736,9 @@ body {
   .always .grid .grid_item2 {
     padding-left: 0;
   }
+  .always .grid .grid_item3 {
+    padding-right: 0;
+  }
   .always .grid .grid_item4 {
     padding-left: 0px;
     margin: 0 auto;
@@ -768,8 +771,109 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .banner {
+    min-height: 600px;
+  }
+  .banner .description h1,
+  .banner .description p:first-of-type {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+  }
+  .banner .description p:last-of-type {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+  }
+  .toward .description {
+    padding: 15px;
+  }
+  .toward .description h2 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+  }
+  .toward .description p:nth-child(3),
+  .toward .description p:nth-child(4) {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+  .toward .description p:nth-child(3) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .choose {
+    padding: 15px;
+  }
+  .choose .grid .grid_item1 {
+    padding-right: 0;
+  }
+  .choose .grid .grid_item1 h3 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+  }
+  .always {
+    padding: 15px;
+  }
+  .always .grid {
+    padding: 0;
+  }
+  .always .grid .grid_item1 img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .always .grid .grid_item2 h3 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+  }
+  .always .grid .grid_item3 h3 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+  }
+  .always .grid .grid_item4 img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .magic {
+    min-height: 632px;
+    padding: 15px;
+  }
+  .magic .description {
+    top: 50%;
+  }
+  .magic .description h2 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+  }
+  .magic .description p {
+    padding: 0;
+  }
+  .magic .grid {
+    display: none;
+  }
+  .talk_about h3 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+  }
   .talk_about .grid {
     grid-template-columns: 1fr;
+  }
+  .each_detail {
+    padding: 15px;
+  }
+  .each_detail .grid .grid_item2 {
+    padding: 0;
+  }
+  .each_detail .grid .grid_item2 h3 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
   }
   .footer h2 {
     font-size: 48px;
