@@ -56,6 +56,25 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+.element-animation{
+    // transform: translate(50%, 0%);
+    // transition: all 2s ease 0s;
+    // opacity: 0;
+
+    transition: all 2.5s ease 0s; 
+    opacity: 0;
+
+    &.element-show{
+    // transform: translate(0px, 0px);
+    // opacity: 1;
+
+    opacity: 1;
+    transition: opacity 3s;
+    }
+}
+
+
+
 .menu {
     display: flex;
     align-items: center;
@@ -393,7 +412,9 @@ body {
         }
         .grid_item2 {
             align-self: end;
+
         }
+       
     }
 
 }

@@ -44,6 +44,15 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
+.element-animation {
+  transition: all 2.5s ease 0s;
+  opacity: 0;
+}
+.element-animation.element-show {
+  opacity: 1;
+  transition: opacity 3s;
+}
+
 .menu {
   display: flex;
   align-items: center;
