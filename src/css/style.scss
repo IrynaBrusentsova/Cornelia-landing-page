@@ -392,13 +392,18 @@ body {
                 margin-top: 32px;
                 margin-bottom: 48px;
             }
-            a {
-                text-decoration: none;
+           
+            // a {
+            //     text-decoration: none;
+            //     font-size: 18px;
+            //     font-weight: 700;
+            //     color: $colorSecond;
+            // }
+            button {
                 font-size: 18px;
                 font-weight: 700;
                 color: $colorSecond;
-            }
-            .button {
+
                 padding: 12px 34px;
                 border: 1px solid $colorSecond;
                 border-radius: 100px;
@@ -625,13 +630,12 @@ body {
                 margin-top: 32px;
                 margin-bottom: 48px;
             }
-            a {
-                text-decoration: none;
+           
+            button {
                 color: $colorFirst;
                 font-size: 18px;
-                font-weight: 700;   
-            }
-            .button {
+                font-weight: 700;
+
                 padding: 12px 34px;
                 border: 1px solid $colorFirst;
                 border-radius: 100px;
@@ -673,21 +677,11 @@ body {
             margin-top: 32px;
             margin-bottom: 48px;
         }
-        // a {
-        //     text-decoration: none;
-        //     color: $colorFirst;
-        //     font-size: 18px;
-        //     font-weight: 700;
-        // }
-
-        .button {
-
-            a {
-                text-decoration: none;
-                color: $colorFirst;
-                font-size: 18px;
-                font-weight: 700;
-            }
+       
+        button {
+            color: $colorFirst;
+            font-size: 18px;
+            font-weight: 700;
 
             padding: 12px 34px;
             border: 1px solid $colorFirst;

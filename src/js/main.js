@@ -19,3 +19,13 @@ function onEntry(entry) {
   for (let elm of elements) {
     observer.observe(elm);
   }
+
+ document.getElementById('btnChoose').onclick = function(){
+  window.location.href = '#banner';
+ };
+ 
+  console.log(document.getElementById('btnChoose'));
+
+  console.log(document.getElementById('btnEachDetail'));
+
+  console.log(document.getElementById('bthUnicornExit'));
