@@ -50,7 +50,7 @@ body {
 }
 .element-animation.element-show {
   opacity: 1;
-  transition: opacity 3s;
+  transition: opacity 2s;
 }
 
 .menu {
@@ -223,7 +223,7 @@ body {
     opacity: 1;
   }
   100% {
-    transform: translateY(-90vh);
+    transform: translateY(-110vh);
     opacity: 0;
   }
 }
@@ -347,14 +347,14 @@ body {
   font-weight: 700;
   color: #FFCCBC;
 }
-.choose .grid .grid_item1 button {
+.choose .grid .grid_item1 .button {
   padding: 12px 34px;
   border: 1px solid #FFCCBC;
   border-radius: 100px;
   background-color: #0B4141;
   transition: 0.8s;
 }
-.choose .grid .grid_item1 button:hover {
+.choose .grid .grid_item1 .button:hover {
   transition: 0.8s;
   transform: scale(1.1);
 }
@@ -595,13 +595,13 @@ body {
   font-size: 18px;
   font-weight: 700;
 }
-.each_detail .grid .grid_item2 button {
+.each_detail .grid .grid_item2 .button {
   padding: 12px 34px;
   border: 1px solid #0B4141;
   border-radius: 100px;
   transition: 0.8s;
 }
-.each_detail .grid .grid_item2 button:hover {
+.each_detail .grid .grid_item2 .button:hover {
   transition: 0.8s;
   transform: scale(1.1);
 }
@@ -639,19 +639,19 @@ body {
   margin-top: 32px;
   margin-bottom: 48px;
 }
-.unicorn_exist .grid_item1 a {
-  text-decoration: none;
-  color: #0B4141;
-  font-size: 18px;
-  font-weight: 700;
-}
-.unicorn_exist .grid_item1 button {
+.unicorn_exist .grid_item1 .button {
   padding: 12px 34px;
   border: 1px solid #0B4141;
   border-radius: 100px;
   transition: 0.8s;
 }
-.unicorn_exist .grid_item1 button:hover {
+.unicorn_exist .grid_item1 .button a {
+  text-decoration: none;
+  color: #0B4141;
+  font-size: 18px;
+  font-weight: 700;
+}
+.unicorn_exist .grid_item1 .button:hover {
   transition: 0.8s;
   transform: scale(1.1);
 }
