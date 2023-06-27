@@ -91,6 +91,9 @@ body {
   color: #0B4141;
   font-size: 16px;
 }
+.menu .nav ul a:hover {
+  text-decoration: underline;
+}
 .menu .nav ul li:last-child {
   background-color: #0B4141;
   padding: 12px 18px;
